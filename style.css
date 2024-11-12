@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: DarkBlue;
+    /* Updated background color */
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 60px;
+    /* Extra space above title */
+}
+
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Services section layout */
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Card styling */
+.services .card {
+    text-align: center;
+    background: #222;
+    padding: 20px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.services .card:hover {
+    background: #00FFFF;
+}
+
+.services .card .content {
+    transition: 0.3s;
+}
+
+.services .card:hover .content {
+    transform: scale(1.07);
+}
+
+.services .card .content .icon {
+    padding: 5px 0;
+    color: white;
+}
+
+.services .card .content .icon i {
+    font-size: 40px;
+}
+
+.services .card .content .title {
+    padding: 5px 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: chocolate;
+    transition: 0.3s;
+}
+
+.services .card:hover .content .title,
+.services .card:hover p {
+    color: #000000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .container {
+        padding-top: 30px;
+    }
+}
