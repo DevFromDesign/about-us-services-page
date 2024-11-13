@@ -5,4 +5,5 @@ This project showcases an "About Us" section and a "Services" section, designed 
 - Fully Responsive Layout: Adjusts automatically for desktop, tablet, and mobile devices.
 - Full-Screen Sections: Both sections are designed to take up full-screen space.
 - CSS Animations: Hover effects for service cards.
+  Demo :- https://shorturl.at/FXjGi
 
